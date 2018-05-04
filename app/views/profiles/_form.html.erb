@@ -11,10 +11,6 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :user_id %>
-    <%= form.text_field :user_id %>
-  </div>
 
   <div class="field">
     <%= form.label :first_name %>
@@ -27,9 +23,12 @@
   </div>
 
   <div class="field">
-    <%= form.label :image_data %>
-    <%= form.text_area :image_data %>
+    <%= form.label :image %>
+
+    <%= form.file_field :image %>
   </div>
+
+ 
 
   <div class="actions">
     <%= form.submit %>
