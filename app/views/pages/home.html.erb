@@ -1,2 +1,7 @@
 <h1>Pages#home</h1>
 <p>Find me in app/views/pages/home.html.erb</p>
+<%= link_to 'About us', pages_about_path %>
+<%= link_to 'Contact us', pages_contact_path %>
+<%= link_to 'Profile', action: "show", controller: "profiles", id: current_user %>
+
+<%#  %>
