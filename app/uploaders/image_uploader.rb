@@ -3,10 +3,11 @@ require "image_processing/mini_magick"
 class ImageUploader < Shrine
     plugin :processing
     plugin :versions, names: [:original, :thumb, :medium]
+    plugin :validation_helpers
     plugin :delete_raw # delete processed files after uploading
 
 
-    process(:store) do |io, context|
+     process(:store) do |io, context|
         original = io.download
         pipeline = ImageProcessing::MiniMagick.source(original)
         size_80 = pipeline.resize_to_limit!(80, 80)

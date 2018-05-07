@@ -1,5 +1,6 @@
 require "shrine"
 require "shrine/storage/file_system"
+require "image_processing/mini_magick"
  
 Shrine.plugin :activerecord
 Shrine.plugin :logging, logger: Rails.logger
