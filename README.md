@@ -32,6 +32,8 @@ The first workflow diagram shows the normal path throught
 #### DB Design
 ![Database](/apps/assets/images/readme/Database.png)
 
+### Code Reviews
+
 
 ### Gems
 - Devise
